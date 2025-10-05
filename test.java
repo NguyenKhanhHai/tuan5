@@ -1,5 +1,5 @@
 public class Test {
-    public static void main(String[] args) {
+     public static void main(String[] args) {
       System.out.println("Tạo đối tượng sách thứ nhất:");
         Sach sach1 = new Sach("JV01", "Lập trình Java cơ bản", "John Doe", 2022, 50);
         sach1.hienThiThongTin();

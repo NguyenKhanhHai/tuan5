@@ -1,54 +1,70 @@
 public class Sach {
+    //Thuộc tính (Attributes)
     private String maSach;
     private String tieuDe;
     private String tacGia;
     private int namXuatBan;
     private int soLuong;
-    public Sach() {
+    // Constructor không tham số
+    public Sach(){   
     }
-    public Sach(String maSach, String tieuDe, String tacGia, int namXuatBan, int soLuong) {
+     // Constructor có tham số
+    public Sach(String maSach, String tieuDe, String tacGia, int namXuatBan, int soLuong)
+    {
         this.maSach = maSach;
         this.tieuDe = tieuDe;
         this.tacGia = tacGia;
         this.namXuatBan = namXuatBan;
         this.soLuong = soLuong;
     }
-    public void hienThiThongTin() {
-        System.out.println("--- Thông Tin Chi Tiết Sách ---");
-        System.out.println("Mã sách: " + this.maSach);
-        System.out.println("Tiêu đề: " + this.tieuDe);
-        System.out.println("Tác giả: " + this.tacGia);
-        System.out.println("Năm xuất bản: " + this.namXuatBan);
-        System.out.println("Số lượng: " + this.soLuong);
-    }
-    public String getMaSach() {
+    // Getter và Setter
+    public String getMaSach() 
+    {
         return maSach;
     }
-    public void setMaSach(String maSach) {
+    public void setMaSach(String maSach){
         this.maSach = maSach;
     }
-    public String getTieuDe() {
+    public String getTieuDe()
+    {
         return tieuDe;
     }
-    public void setTieuDe(String tieuDe) {
+    public void setTieuDe(String tieuDe)
+    {
         this.tieuDe = tieuDe;
     }
-    public String getTacGia() {
+    public String getTacGia()
+    {
         return tacGia;
     }
-    public void setTacGia(String tacGia) {
+    public void setTacGia(String tacGia)
+    {
         this.tacGia = tacGia;
     }
-    public int getNamXuatBan() {
+    public int getNamXuatBan()
+    {
         return namXuatBan;
     }
-    public void setNamXuatBan(int namXuatBan) {
+    public void setNamXuatBan(int namXuatBan)
+    {
         this.namXuatBan = namXuatBan;
     }
-    public int getSoLuong() {
+    public int getSoLuong()
+    {
         return soLuong;
     }
-    public void setSoLuong(int soLuong) {
+    public void setSoLuong(int soLuong)
+    {
         this.soLuong = soLuong;
     }
+    //Phương thức hiển thị thông tin sách
+        public void hienThiThongTin()
+        {
+            System.out.println("Mã sách:" + maSach);
+            System.out.println("Tiêu đề:" + tieuDe);
+            System.out.println("Tác Giả:" + tacGia);
+            System.out.println("Năm xuất bản:" + namXuatBan);
+            System.out.println("Số lượng" + soLuong);
+            System.out.println("---------------------------");
+        }
 }
