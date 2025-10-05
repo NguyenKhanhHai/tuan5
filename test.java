@@ -1,4 +1,4 @@
-public class Test {
+public class test {
      public static void main(String[] args) {
       System.out.println("Tạo đối tượng sách thứ nhất:");
         Sach sach1 = new Sach("JV01", "Lập trình Java cơ bản", "John Doe", 2022, 50);
@@ -16,3 +16,4 @@ public class Test {
         System.out.println("\nLấy riêng tên tác giả của sách 2: " + sach2.getTacGia());
     }
 }
+
