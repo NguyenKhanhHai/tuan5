@@ -1,21 +1,20 @@
+
+
 public class Sach {
     private String maSach;
     private String tieuDe;
     private String tacGia;
     private int namXuatBan;
     private int soLuong;
-
     public Sach() {
     }
-
-     public Sach(String maSach, String tieuDe, String tacGia, int namXuatBan, int soLuong) {
+    public Sach(String maSach, String tieuDe, String tacGia, int namXuatBan, int soLuong) {
         this.maSach = maSach;
         this.tieuDe = tieuDe;
         this.tacGia = tacGia;
         this.namXuatBan = namXuatBan;
         this.soLuong = soLuong;
     }
-
     public String getMaSach() {
         return maSach;
     }
@@ -55,18 +54,18 @@ public class Sach {
     public void setSoLuong(int soLuong) {
         this.soLuong = soLuong;
     }
-
     public void hienThiThongTin() {
-        System.out.println("Thông tin sách:");
+        System.out.println("\n===== Thong tin sach =====");
         System.out.println("Mã sách: " + maSach);
         System.out.println("Tiêu đề: " + tieuDe);
         System.out.println("Tác giả: " + tacGia);
         System.out.println("Năm xuất bản: " + namXuatBan);
         System.out.println("Số lượng: " + soLuong);
+        System.out.println("==========================");
     }
-
-
-    public static void main(String[] arg){
+}
+class Test {
+    public static void main(String[] args) {
         Sach sach1 = new Sach("S001", "Lập trình Java", "Nguyễn Khánh Hải", 2025, 5);
         Sach sach2 = new Sach();
         sach2.setMaSach("S002");
@@ -74,7 +73,6 @@ public class Sach {
         sach2.setTacGia("Nguyễn Lý Luật");
         sach2.setNamXuatBan(2020);
         sach2.setSoLuong(3);
-
         sach1.hienThiThongTin();
         sach2.hienThiThongTin();
     }
